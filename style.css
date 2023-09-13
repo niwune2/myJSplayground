@@ -1,0 +1,273 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30 auto;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    color: white;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.propaties,
+.colors {
+    margin: 5px;
+    border: 2px solid black;
+}
+
+header {
+    margin: 3px;
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+h3 {
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px 0;
+    padding: 0 5px;
+    resize: none;
+    width: 400px;
+    font-size: 1.4rem;
+    height: 1.7rem;
+    text-align: center;
+}
+
+#reset {
+    font-size: 1.2rem;
+    width: 100px;
+    height: 1.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#reset:hover {
+    background-color: red;
+    border: none;
+    color: white;
+    box-shadow: 0 0 5px orangered;
+    border-radius: 5px;
+}
+
+#copy {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 2rem;
+    text-align: center;
+    padding: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 1s;
+
+}
+
+#copy:hover {
+    /* background-color: yellowgreen;
+    transition: background-color 1s; 1秒間で背景色が変化 */
+    border: none;
+    /* color: white; */
+    box-shadow: 0 0 5px aquamarine;
+    /* border-radius: 5px; */
+}
+
+#memo {
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(255, 247, 0);
+    background-color: rgb(67, 67, 67);
+}
+
+.propAll,
+.lv1All {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.propAll:hover,
+.lv1All:hover {
+    box-shadow: 0 0 10px white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255);
+}
+
+.propAll {
+    width: 200px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.lv1All {
+    font-size: 1.5rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* 無彩色 */
+#lv1black {
+    color: white;
+    background-color: black;
+}
+
+#lv1black:active {
+    box-shadow: inset 0 0 10px rgba(255, 255, 255);
+    border: none;
+}
+
+#lv1silver{
+    color: black;
+    background-color: silver;
+}
+#lv1silver:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+#lv1gray{
+    color: white;
+    background-color: gray;
+}
+#lv1gray:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+#lv1white{
+    color: black;
+    background-color: white;
+}
+#lv1white:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: none;
+}
+
+/* 赤系 */
+#lv1red {
+    color: white;
+    background-color: red;
+}
+
+#lv1red:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1maroon{
+    color: white;
+    background-color: maroon;
+}
+#lv1maroon:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1purple{
+    color: white;
+    background-color: purple;
+}
+#lv1purple:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1fuchsia{
+    color: white;
+    background-color: fuchsia;
+}
+#lv1fuchsia:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+#lv1navy{
+    color: white;
+    background-color: navy;
+}
+#lv1navy:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1blue {
+    color: white;
+    background-color: blue;
+}
+#lv1blue:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1teal{
+    color: white;
+    background-color: teal;
+}
+#lv1teal:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1aqua{
+    color: black;
+    background-color: aqua;
+}
+#lv1aqua:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1aqua:hover{
+    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.8);
+}
+
+#lv1green {
+    color: white;
+    background-color: green;
+}
+
+#lv1green:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+#lv1lime{
+    color: black;
+    background-color: lime;
+}
+#lv1lime:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1olive{
+    color: white;
+    background-color: olive;
+}
+#lv1olive:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv1yellow{
+    color: black;
+    background-color: yellow;
+}
+#lv1yellow:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#lv2orange{
+    color: white;
+    background-color: orange;
+}
+#lv2orange:active{
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);   
+}
