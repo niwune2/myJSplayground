@@ -1,4 +1,4 @@
-# okiHabu
+# myJSplayground
 
 これは練習のために作ったJavaScriptです。
 
