@@ -17,8 +17,23 @@ body {
 
 .propaties,
 .colors {
+    margin: 3px;
+    border: 2px solid rgb(166, 166, 166);
+}
+
+.history {
+    margin: auto;
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    background: rgb(80, 80, 80);
+    border: 2px solid rgb(189, 189, 189);
+}
+
+.historyPara {
+    text-align: left;
     margin: 5px;
-    border: 2px solid black;
 }
 
 header {
@@ -28,12 +43,12 @@ header {
 
 h2 {
     margin: 5px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 h3 {
     margin: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 textarea {
@@ -47,10 +62,19 @@ textarea {
     text-align: center;
 }
 
+.operations,span {
+    /* 横に揃える */
+    vertical-align:bottom;
+}
+
 #reset {
     font-size: 1.2rem;
-    width: 100px;
-    height: 1.8rem;
+    margin: 0px 0;
+    margin-bottom: 5px;
+    width: auto;
+    text-align: center;
+    height: 2rem;
+    border: none;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -59,14 +83,13 @@ textarea {
     border: none;
     color: white;
     box-shadow: 0 0 5px orangered;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 #copy {
     font-size: 1.2rem;
-    margin: 5px 0;
-    margin-bottom: 15px;
-    width: 60px;
+    margin: 0px 0;
+    width: 50px;
     height: 2rem;
     text-align: center;
     padding: 3px;
@@ -86,17 +109,27 @@ textarea {
     /* border-radius: 5px; */
 }
 
-#memo {
+#clear{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 0;
+    width: autos;
+}
+
+/* #memo {
     text-align: left;
     font-size: 1rem;
     color: rgb(255, 247, 0);
     background-color: rgb(67, 67, 67);
-}
+} */
 
 .propAll,
 .lv1All {
     font-family: 'Courier New', Courier, monospace;
-    margin: 5px 5px;
+    margin: 5px 2px;
     cursor: pointer;
 }
 
@@ -107,17 +140,17 @@ textarea {
 }
 
 .propAll {
-    width: 200px;
-    height: 25px;
+    width: auto;
+    height: 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .lv1All {
-    font-size: 1.5rem;
-    width: 120px;
-    height: 40px;
+    font-size: 1.2rem;
+    width: auto;
+    height: 30px;
     border-radius: 5px;
     border: none;
 }
@@ -133,27 +166,32 @@ textarea {
     border: none;
 }
 
-#lv1silver{
+#lv1silver {
     color: black;
     background-color: silver;
 }
-#lv1silver:active{
+
+#lv1silver:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: none;
 }
-#lv1gray{
+
+#lv1gray {
     color: white;
     background-color: gray;
 }
-#lv1gray:active{
+
+#lv1gray:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: none;
 }
-#lv1white{
+
+#lv1white {
     color: black;
     background-color: white;
 }
-#lv1white:active{
+
+#lv1white:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: none;
 }
@@ -168,64 +206,78 @@ textarea {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1maroon{
+
+#lv1maroon {
     color: white;
     background-color: maroon;
 }
-#lv1maroon:active{
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-    border: 2px solid rgba(0, 0, 0, 0.8);
-}
-#lv1purple{
-    color: white;
-    background-color: purple;
-}
-#lv1purple:active{
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-    border: 2px solid rgba(0, 0, 0, 0.8);
-}
-#lv1fuchsia{
-    color: white;
-    background-color: fuchsia;
-}
-#lv1fuchsia:active{
+
+#lv1maroon:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
-#lv1navy{
+#lv1purple {
     color: white;
-    background-color: navy;
+    background-color: purple;
 }
-#lv1navy:active{
+
+#lv1purple:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
+
+#lv1fuchsia {
+    color: white;
+    background-color: fuchsia;
+}
+
+#lv1fuchsia:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+#lv1navy {
+    color: white;
+    background-color: navy;
+}
+
+#lv1navy:active {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
 #lv1blue {
     color: white;
     background-color: blue;
 }
+
 #lv1blue:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1teal{
+
+#lv1teal {
     color: white;
     background-color: teal;
 }
-#lv1teal:active{
+
+#lv1teal:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1aqua{
+
+#lv1aqua {
     color: black;
     background-color: aqua;
 }
-#lv1aqua:active{
+
+#lv1aqua:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1aqua:hover{
+
+#lv1aqua:hover {
     box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.8);
 }
 
@@ -239,35 +291,42 @@ textarea {
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
-#lv1lime{
+#lv1lime {
     color: black;
     background-color: lime;
 }
-#lv1lime:active{
+
+#lv1lime:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1olive{
+
+#lv1olive {
     color: white;
     background-color: olive;
 }
-#lv1olive:active{
+
+#lv1olive:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv1yellow{
+
+#lv1yellow {
     color: black;
     background-color: yellow;
 }
-#lv1yellow:active{
+
+#lv1yellow:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(0, 0, 0, 0.8);
 }
-#lv2orange{
+
+#lv2orange {
     color: white;
     background-color: orange;
 }
-#lv2orange:active{
+
+#lv2orange:active {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
-    border: 2px solid rgba(0, 0, 0, 0.8);   
+    border: 2px solid rgba(0, 0, 0, 0.8);
 }

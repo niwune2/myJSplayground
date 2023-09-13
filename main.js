@@ -34,6 +34,7 @@ const propButtons = [
 
 const outputTextarea = document.getElementById('textArea');
 const copyButton = document.getElementById('copy');
+const historyList = document.querySelector('.history');
 
 let selectedPropButton = null;
 let selectedColorButton = null;
@@ -50,6 +51,13 @@ copyButton.addEventListener('click', () => {
         copyButton.innerHTML = '<span class="material-symbols-outlined">check</span>';
         copyButton.style.backgroundColor = 'yellowgreen';
         copyButton.style.color = 'white';
+
+        //履歴(history)の追加
+        const history = document.createElement('p');
+        history.classList.add('historyPara');
+        history.textContent = outputTextarea.value;
+        historyList.appendChild(history);
+        historyList.scrollTop = historyList.scrollHeight;
 
         //ボタンのアイコンをもとに戻すまでの時間を設定
         //ボタンの背景色をもとに戻すまでの時間を設定
@@ -129,6 +137,15 @@ function reset() {//テキストエリアをリセットする関数
 }
 reset(); //テキストエリアをリセット
 
+//履歴を消去する
+const clear = document.getElementById('clear');
+clear.addEventListener('click', () => {
+    const targets = document.querySelectorAll('.historyPara');
+    targets.forEach(target => {
+        target.remove();
+        console.log('History Cleared.履歴を消去しました。')
+    });
+});
 
 
 // const textArea = document.getElementById('textArea');
